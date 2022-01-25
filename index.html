@@ -4,18 +4,132 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="pricennect" href="https://fonts.googleapis.com">
+    <link rel="pricennect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="icon" href="/assets/favicon.png" type="image/x-icon"/>
     <title>DrivenEats</title>
 </head>
 <body>
+    <div class="container">
+        <header class="header">
+            <h1>DrivenEats</h1>
+            <h2>Sua comida em 6 minutos</h2>
+        </header>
+
+        <main>
+            <article>
+                <p class="title">Primeiro, seu prato</p>                
+                <div class="options">
+                    <div id="frango" class="option" onclick="escolherFrango()">
+                        <img src="/assets/frango.jpg">
+                        <div class="text">
+                            <p class="name">Frango Yin Yang</p>
+                            <p class="description">Um pouco de batata, um pouco de salada</p>
+                            <p class="price">R$ 14,90</p>
+                        </div>
+                        <ion-icon id="check" name="checkmark-circle"></ion-icon>
+                    </div>
+                    <div id="carne" class="option" onclick="escolherCarne()">
+                        <img src="/assets/carne.jpg" alt="">
+                        <div class="text">
+                            <p class="name">Picanha Tradicional</p>
+                            <p class="description">Picanha na brasa</p>
+                            <p class="price">R$ 54,90</p>
+                        </div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                    <div id="salmao" class="option" onclick="escolherSalmao()">
+                        <img src="/assets/salmao.jpeg">
+                        <div class="text">
+                            <p class="name">Salmão Tropical</p>
+                            <p class="description">Salmão grelhado com molho</p>
+                            <p class="price">R$ 61,00</p>
+                        </div>
+                        <ion-icon id="check" name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <p class="title">Agora, sua bebida</p>
+                <div class="options">
+                    <div id="coca" class="option" onclick="escolherCoca()">
+                        <img src="/assets/coca.jpg">
+                        <div class="text">
+                            <p class="name">Coquinha gelada</p>
+                            <p class="description">Lata 350ml</p>
+                            <p class="price">R$ 4,90</p>
+                        </div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                    <div id="refresco" class="option" onclick="escolherRefresco()">
+                        <img src="/assets/refresco.jpg">
+                        <div class="text">
+                            <p class="name">Refresco</p>
+                            <p class="description">Laranja, limão ou morango</p>
+                            <p class="price">R$ 5,90</p>
+                        </div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                    <div id="agua-de-coco" class="option" onclick="escolherAguaDeCoco()">
+                        <img src="/assets/agua-de-coco.jpg">
+                        <div class="text">
+                            <p class="name">Água de Coco</p>
+                            <p class="description">Natural</p>
+                            <p class="price">R$ 2,90</p>
+                        </div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <p class="title">Por fim, sua sobremesa</p>
+                <div class="options">
+                    <div id="pudim" class="option" onclick="escolherPudim()">
+                        <img src="/assets/pudim.jpg">
+                        <div class="text">
+                            <p class="name">Pudim</p>
+                            <p class="description">Apenas pudim</p>
+                            <p class="price">R$ 7,90</p>
+                        </div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                    <div id="sorvete" class="option" onclick="escolherSorvete()">
+                        <img src="/assets/sorvete.jpg">
+                        <div class="text">
+                            <p class="name">Sorvete</p>
+                            <p class="description">Copo com 3 bolas</p>
+                            <p class="price">R$ 6,90</p>
+                        </div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                    <div id="donuts" class="option" onclick="escolherDonuts()">
+                        <img src="/assets/donuts.jpg">
+                        <div class="text">
+                            <p class="name">Donuts</p>
+                            <p class="description">Caixa com 6 unidades</p>
+                            <p class="price">R$ 12,00</p>
+                        </div>
+                        <ion-icon name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </article>
+
+        </main>
+
+        <footer>
+            <button onclick="fecharPedido()">
+                <p class="footer-text">Selecione os 3 itens<br>para fechar o pedido</p>
+            </button>
+        </footer>
+    </div>
     
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>

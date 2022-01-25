@@ -1,0 +1,169 @@
+body {
+    font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: aquamarine;
+}
+
+.container {
+    width: 414px;
+    background-color: #E5E5E5;
+} 
+
+header {
+    width: 414px;
+    height: 92px;
+    padding-left: 21px;
+    padding-top: 8px;
+    background-color: #CF2B2B;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 54.63px;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21,09px;
+    color: #FFFFFF;
+}
+
+main {
+    height: 1026px;
+    padding-top: 92px;
+    padding-bottom: 124px;
+    background-color: #E5E5E5;
+}
+
+article {
+    width: 414px;
+    height: 300px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 19px;
+    background-color: #E5E5E5;
+    overflow-x: scroll;
+}
+
+.title {
+    width: 414px;
+    height: 25px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32,28px;
+    color: #333333;
+    margin-bottom: 17px;
+}
+
+.options {
+    display: flex;
+    gap: 16px;
+}
+
+.option {
+    min-width: 172px;
+    height: 216px;
+    border-radius: 9px;
+    padding-top: 18px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
+    border: 5px solid white; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+img {
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+ion-icon {
+    color: #FFFFFF;
+    font-size: 15.44px;
+
+    position: absolute;
+    top: 185px;
+    bottom: 16px;
+    right: 20px;
+    left: 144px;
+}
+
+.text {
+    width: 144px;
+    height: 84px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18,75px;
+    color: #333333;
+}
+
+.description {
+    font-weight: 300;
+    font-size: 15px;
+    color: #A6A6A6;
+}
+
+.price {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18,75px;
+    color: #000;
+}
+
+footer {
+    width: 414px;
+    height: 92px;
+    margin-top: 16px;
+    background-color: #FFFFFF;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
+button {
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    background-color: #CBCBCB;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.footer-text {
+    font-weight: 400;
+    font-size:20px;
+    line-height: 23,44px;
+    color: #FFFFFF;
+}
+
