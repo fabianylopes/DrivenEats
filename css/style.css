@@ -96,7 +96,7 @@ img {
 }
 
 ion-icon {
-    color: #FFFFFF;
+    color: #32B72F;
     font-size: 15.44px;
 
     position: absolute;
@@ -171,4 +171,12 @@ button {
 
 .selected {
     border: 5px solid #32B72F; 
+}
+
+.check {
+    display: none;
+}
+
+.button {
+    background-color: #32B72F;
 }
