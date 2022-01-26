@@ -77,13 +77,15 @@ article {
     height: 216px;
     border-radius: 9px;
     padding-top: 18px;
-    background-color: #FFFFFF;
+    background-color: #fff;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
-    border: 5px solid white; 
+    border: 5px solid #fff; 
+
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    cursor: pointer;
 }
 
 img {
@@ -167,3 +169,6 @@ button {
     color: #FFFFFF;
 }
 
+.selected {
+    border: 5px solid #32B72F; 
+}
