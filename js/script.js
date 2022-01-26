@@ -76,3 +76,18 @@ function checkOrder(){
    
 }
 
+function sendOrder(){
+    totalPrice = dishPrice + drinkPrice + dessertPrice;
+
+    let message = `
+    Olá, gostaria de fazer o pedido:
+    - Prato: ${dish}
+    - Bebida: ${drink}
+    - Sobremesa: ${dessert}
+    Total: R$ ${totalPrice.toFixed(2)}
+    `
+    
+    window.open("https://wa.me/+558499999999?text=" + message);
+}
+
+
