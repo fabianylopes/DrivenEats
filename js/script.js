@@ -83,6 +83,19 @@ function cancelOrder(){
 function confirmOrder(){
     const alert = document.querySelector('.modal');
     alert.classList.remove('hide');
+
+    totalPrice = dishPrice + drinkPrice + dessertPrice;
+
+    document.querySelector('.text-confirm.plate').innerHTML = dish;
+    document.querySelector('.text-confirm.platePrice').innerHTML = dishPrice.toFixed(2);
+
+    document.querySelector('.text-confirm.beverage').innerHTML = drink;
+    document.querySelector('.text-confirm.beveragePrice').innerHTML = drinkPrice.toFixed(2);
+
+    document.querySelector('.text-confirm.sweet').innerHTML = dessert;
+    document.querySelector('.text-confirm.sweetPrice').innerHTML = dessertPrice.toFixed(2);
+    
+    document.querySelector('.text-confirm.price').innerHTML = totalPrice.toFixed(2);
 }
 
 function sendOrder(){
@@ -90,7 +103,6 @@ function sendOrder(){
     const nome = prompt('Informe o seu nome: ');
     const endereco = prompt('Informe o seu endereço: ');
 
-    totalPrice = dishPrice + drinkPrice + dessertPrice;
 
     const message = encodeURIComponent(`Olá, gostaria de fazer o pedido: \n- Prato: ${dish} \n- Bebida: ${drink} \n- Sobremesa: ${dessert} \nTotal: R$ ${totalPrice.toFixed(2)} \n\nNome: ${nome} \nEndereço: ${endereco}`);
     

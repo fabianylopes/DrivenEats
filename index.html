@@ -14,36 +14,35 @@
     <title>DrivenEats</title>
 </head>
 <body>
+    <div class="container">
 
-    <div class="modal hide">
-        <div class="alert">
-            <div class="centralized">
-                <div class="text-confirm"><span style="font-weight: 700;">Confirme seu pedido</span></div>
-            </div>
-            <div class="itens">
-                <div class="text-confirm">Salmão Tropical</div>
-                <div class="text-confirm">R$ 61,00</div>
-            </div>
-            <div class="itens">
-                <div class="text-confirm">Água de Coco</div>
-                <div class="text-confirm">R$ 2,90</div>
-            </div>
-            <div class="itens">
-                <div class="text-confirm">Donuts</div>
-                <div class="text-confirm">R$ 12,00</div>
-            </div>
-            <div class="itens">
-                <div class="text-confirm"><span style="font-weight: 700;">TOTAL</span></div>
-                <div class="text-confirm"><span style="font-weight: 700;">R$ 75,90</span></div>
-            </div>
-            <div class="centralized">
-                <button class="confirm-button" onclick="sendOrder()">Tudo certo, pode pedir!</button>
-                <button class="cancel-button" onclick="cancelOrder()">Cancelar</button>
+        <div class="modal hide">
+            <div class="alert">
+                <div class="centralized">
+                    <div class="text-confirm"><span style="font-weight: 700;">Confirme seu pedido</span></div>
+                </div>
+                <div class="itens">
+                    <div class="text-confirm plate">Salmão Tropical</div>
+                    <div class="text-confirm platePrice">R$ 61,00</div>
+                </div>
+                <div class="itens">
+                    <div class="text-confirm beverage">Água de Coco</div>
+                    <div class="text-confirm beveragePrice">R$ 2,90</div>
+                </div>
+                <div class="itens">
+                    <div class="text-confirm sweet">Donuts</div>
+                    <div class="text-confirm sweetPrice">R$ 12,00</div>
+                </div>
+                <div class="itens">
+                    <div class="text-confirm"><span style="font-weight: 700;">TOTAL</span></div>
+                    <div class="text-confirm price"><span style="font-weight: 700;">R$ 75,90</span></div>
+                </div>
+                <div class="centralized">
+                    <button class="confirm-button" onclick="sendOrder()">Tudo certo, pode pedir!</button>
+                    <button class="cancel-button" onclick="cancelOrder()">Cancelar</button>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="container">
 
         <header class="header">
             <h1>DrivenEats</h1>

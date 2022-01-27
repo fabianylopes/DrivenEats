@@ -7,7 +7,7 @@ body {
 
 .container {
     width: 414px;
-    height: 1026px;
+    height: 100vh;
     background-color: #E5E5E5;
 } 
 
@@ -52,6 +52,7 @@ article {
     padding-bottom: 27px;
     padding-left: 19px;
     background-color: #E5E5E5;
+    overflow: hidden;
     overflow-x: scroll;
 }
 
