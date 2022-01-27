@@ -9,6 +9,7 @@ body {
 
 .container {
     width: 414px;
+    height: 1026px;
     background-color: #E5E5E5;
 } 
 
@@ -179,4 +180,72 @@ button {
 
 .button {
     background-color: #32B72F;
+}
+
+.hide {
+    display: none;
+}
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.9);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.alert {
+    width: 377px;
+    height: 353px;
+    background-color: #50D074;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    padding: 20px 25px 0px 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.itens {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-confirm {
+    color: #fff;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25.78px;
+}
+
+.centralized {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.confirm-button {
+    width: 330px;
+    height: 52px;
+    background-color: #fff;
+    color: #50D074;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25.78px;
+}
+
+.cancel-button {
+    background-color: #50D074;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25.78px;
 }

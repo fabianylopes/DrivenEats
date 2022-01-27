@@ -69,23 +69,26 @@ function checkOrder(){
         const text = document.querySelector('.footer-text');
         text.innerHTML = 'Fechar pedido';
         
-        const button = document.querySelector('button');
-        button.classList.add('button')
+        const botao = document.querySelector('button');
+        botao.classList.add('button')
         orderButton.disabled = false;
     }
    
 }
 
+function confirm(){
+    const alert = document.querySelector('.modal');
+    alert.classList.remove('hide');
+}
+
 function sendOrder(){
+    
+    const nome = prompt('Informe o seu nome: ');
+    const endereco = prompt('Informe o seu endereço: ');
+
     totalPrice = dishPrice + drinkPrice + dessertPrice;
 
-    let message = `
-    Olá, gostaria de fazer o pedido:
-    - Prato: ${dish}
-    - Bebida: ${drink}
-    - Sobremesa: ${dessert}
-    Total: R$ ${totalPrice.toFixed(2)}
-    `
+    const message = encodeURIComponent(`Olá, gostaria de fazer o pedido: \n- Prato: ${dish} \n- Bebida: ${drink} \n- Sobremesa: ${dessert} \nTotal: R$ ${totalPrice.toFixed(2)} \n\nNome: ${nome} \nEndereço: ${endereco}`);
     
     window.open("https://wa.me/+558499999999?text=" + message);
 }
