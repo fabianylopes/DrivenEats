@@ -3,8 +3,6 @@ body {
 
     display: flex;
     justify-content: center;
-
-    background-color: aquamarine;
 }
 
 .container {
@@ -178,12 +176,8 @@ button {
     display: none;
 }
 
-.button {
+.footer-button {
     background-color: #32B72F;
-}
-
-.hide {
-    display: none;
 }
 
 .modal {
@@ -248,4 +242,8 @@ button {
     font-weight: 700;
     font-size: 20px;
     line-height: 25.78px;
+}
+
+.hide {
+    display: none;
 }

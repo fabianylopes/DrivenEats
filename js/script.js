@@ -8,7 +8,6 @@ let dishPrice;
 let drinkPrice;
 let dessertPrice;
 
-
 function choosePlate(option, name, price){
     const border = document.querySelector('.dish.selected');
     
@@ -60,7 +59,7 @@ function chooseDessert(option, name, price){
     checkOrder();
 }
 
-let orderButton = document.querySelector('button');
+let orderButton = document.querySelector('.buttonn');
 orderButton.disabled = true;
 
 function checkOrder(){
@@ -69,14 +68,19 @@ function checkOrder(){
         const text = document.querySelector('.footer-text');
         text.innerHTML = 'Fechar pedido';
         
-        const botao = document.querySelector('button');
-        botao.classList.add('button')
+        const botao = document.querySelector('.buttonn');
+        botao.classList.add('footer-button')
         orderButton.disabled = false;
     }
    
 }
 
-function confirm(){
+function cancelOrder(){
+    const alert = document.querySelector('.modal');
+    alert.classList.add('hide');
+}
+
+function confirmOrder(){
     const alert = document.querySelector('.modal');
     alert.classList.remove('hide');
 }
