@@ -31,7 +31,7 @@ function chooseDrink(option, name, price){
     const border = document.querySelector('.drink.selected');
     
     if(border !== null){
-        border.classList.toggle('selected');
+        border.classList.remove('selected');
     }else{
         cont++;
     }
@@ -48,7 +48,7 @@ function chooseDessert(option, name, price){
     const border = document.querySelector('.dessert.selected');
     
     if(border !== null){
-        border.classList.toggle('selected');
+        border.classList.remove('selected');
     }else{
         cont++;
     }
@@ -102,7 +102,7 @@ function sendOrder(){
     const nome = prompt('Informe o seu nome: ');
     const endereco = prompt('Informe o seu endereço: ');
 
-    const message = encodeURIComponent(`Olá, gostaria de fazer o pedido: \n- Prato: ${dish} \n- Bebida: ${drink} \n- Sobremesa: ${dessert} \nTotal: R$ ${totalPrice.toFixed(2)} \n\nNome: ${nome} \nEndereço: ${endereco}`);
+    const message = encodeURIComponent(`Olá, gostaria de fazer o pedido: \n- Prato: ${dish} \n- Bebida: ${drink} \n- Sobremesa: ${dessert} \nTotal: R$ ${totalPrice.toFixed(2).replace('.',',')} \n\nNome: ${nome} \nEndereço: ${endereco}`);
     
     window.open("https://wa.me/+558499999999?text=" + message);
 }
