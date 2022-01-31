@@ -27,7 +27,6 @@ function choosePlate(option, name, price){
     checkOrder();
 }
 
-
 function chooseDrink(option, name, price){
     const border = document.querySelector('.drink.selected');
     
@@ -48,7 +47,6 @@ function chooseDrink(option, name, price){
 function chooseDessert(option, name, price){
     const border = document.querySelector('.dessert.selected');
     
-
     if(border !== null){
         border.classList.toggle('selected');
     }else{
@@ -67,7 +65,6 @@ let orderButton = document.querySelector('.buttonn');
 orderButton.disabled = true;
 
 function checkOrder(){
-
     if(cont === 3){
         const text = document.querySelector('.footer-text');
         text.innerHTML = 'Fechar pedido';
@@ -76,7 +73,6 @@ function checkOrder(){
         botao.classList.add('footer-button')
         orderButton.disabled = false;
     }
-   
 }
 
 function cancelOrder(){
@@ -103,7 +99,6 @@ function confirmOrder(){
 }
 
 function sendOrder(){
-    
     const nome = prompt('Informe o seu nome: ');
     const endereco = prompt('Informe o seu endereço: ');
 
@@ -111,5 +106,3 @@ function sendOrder(){
     
     window.open("https://wa.me/+558499999999?text=" + message);
 }
-
-
