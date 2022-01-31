@@ -12,18 +12,19 @@ function choosePlate(option, name, price){
     const border = document.querySelector('.dish.selected');
     
     if(border !== null){
-        border.classList.toggle('selected');
+        border.classList.remove('selected'); 
     }else{
         cont++;
     }
-
-    option.classList.add('selected');
-
+    
+    option.classList.add('selected');   
+    
     dish = name;
     dishPrice = price;
-
-    checkOrder();
+    
+       checkOrder();
 }
+
 
 function chooseDrink(option, name, price){
     const border = document.querySelector('.drink.selected');
@@ -45,6 +46,7 @@ function chooseDrink(option, name, price){
 function chooseDessert(option, name, price){
     const border = document.querySelector('.dessert.selected');
     
+
     if(border !== null){
         border.classList.toggle('selected');
     }else{
@@ -52,7 +54,7 @@ function chooseDessert(option, name, price){
     }
 
     option.classList.add('selected');
-
+    
     dessert = name;
     dessertPrice = price;
 
@@ -84,7 +86,7 @@ function confirmOrder(){
     const alert = document.querySelector('.modal');
     alert.classList.remove('hide');
 
-    totalPrice = dishPrice + drinkPrice + dessertPrice;
+    let totalPrice = dishPrice + drinkPrice + dessertPrice;
 
     document.querySelector('.text-confirm.plate').innerHTML = dish;
     document.querySelector('.text-confirm.platePrice').innerHTML = dishPrice.toFixed(2);
@@ -102,7 +104,6 @@ function sendOrder(){
     
     const nome = prompt('Informe o seu nome: ');
     const endereco = prompt('Informe o seu endereço: ');
-
 
     const message = encodeURIComponent(`Olá, gostaria de fazer o pedido: \n- Prato: ${dish} \n- Bebida: ${drink} \n- Sobremesa: ${dessert} \nTotal: R$ ${totalPrice.toFixed(2)} \n\nNome: ${nome} \nEndereço: ${endereco}`);
     
