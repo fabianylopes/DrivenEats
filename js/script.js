@@ -8,6 +8,8 @@ let dishPrice;
 let drinkPrice;
 let dessertPrice;
 
+let totalPrice;
+
 function choosePlate(option, name, price){
     const border = document.querySelector('.dish.selected');
     
@@ -22,7 +24,7 @@ function choosePlate(option, name, price){
     dish = name;
     dishPrice = price;
     
-       checkOrder();
+    checkOrder();
 }
 
 
@@ -86,7 +88,7 @@ function confirmOrder(){
     const alert = document.querySelector('.modal');
     alert.classList.remove('hide');
 
-    let totalPrice = dishPrice + drinkPrice + dessertPrice;
+    totalPrice = dishPrice + drinkPrice + dessertPrice;
 
     document.querySelector('.text-confirm.plate').innerHTML = dish;
     document.querySelector('.text-confirm.platePrice').innerHTML = dishPrice.toFixed(2);
