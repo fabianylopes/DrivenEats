@@ -87,15 +87,15 @@ function confirmOrder(){
     totalPrice = dishPrice + drinkPrice + dessertPrice;
 
     document.querySelector('.text-confirm.plate').innerHTML = dish;
-    document.querySelector('.text-confirm.platePrice').innerHTML = dishPrice.toFixed(2);
+    document.querySelector('.text-confirm.platePrice').innerHTML = dishPrice.toFixed(2).replace('.',',');
 
     document.querySelector('.text-confirm.beverage').innerHTML = drink;
-    document.querySelector('.text-confirm.beveragePrice').innerHTML = drinkPrice.toFixed(2);
+    document.querySelector('.text-confirm.beveragePrice').innerHTML = drinkPrice.toFixed(2).replace('.',',');
 
     document.querySelector('.text-confirm.sweet').innerHTML = dessert;
-    document.querySelector('.text-confirm.sweetPrice').innerHTML = dessertPrice.toFixed(2);
+    document.querySelector('.text-confirm.sweetPrice').innerHTML = dessertPrice.toFixed(2).replace('.',',');
     
-    document.querySelector('.text-confirm.price').innerHTML = totalPrice.toFixed(2);
+    document.querySelector('.text-confirm.price').innerHTML = totalPrice.toFixed(2).replace('.',',');
 }
 
 function sendOrder(){
